@@ -45,7 +45,6 @@ public class KakaoTalkListener extends NotificationListenerService {
                 for (Notification.Action act : wExt.getActions()) {
                     if (act.getRemoteInputs() != null && act.getRemoteInputs().length > 0) {
                         if (act.title.toString().toLowerCase().contains("reply") ||
-                                act.title.toString().toLowerCase().contains("Reply") ||
                                 act.title.toString().toLowerCase().contains("답장")) {
                             Bundle data = sbn.getNotification().extras;
                             String room, sender, msg;
