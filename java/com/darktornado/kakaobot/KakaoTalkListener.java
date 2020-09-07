@@ -49,26 +49,20 @@ public class KakaoTalkListener extends NotificationListenerService {
                             Bundle data = sbn.getNotification().extras;
                             String room, sender, msg;
                             boolean isGroupChat = data.get("android.text") instanceof SpannableString;
-                            if(Build.VERSION.SDK_INT>23) {
+                            if (Build.VERSION.SDK_INT > 23) {
                                 room = data.getString("android.summaryText");
                                 if (room == null) isGroupChat = false;
                                 else isGroupChat = true;
                                 sender = data.get("android.title").toString();
                                 msg = data.get("android.text").toString();
+                            } else {
+                                room = data.getString("android.subText");
+                                msg = data.getString("android.text");
+                                sender = data.getString("android.title");
+                                if (room == null) isGroupChat = false;
+                                else isGroupChat = true;
                             }
-                            else{
-                                room = data.getString("android.title");
-                                if(isGroupChat) {
-                                    String html = Html.toHtml((Spanned) data.get("android.text"));
-                                    sender = Html.fromHtml(html.split("<b>")[1].split("</b>")[0]).toString();
-                                    msg = Html.fromHtml(html.split("</b>")[1].split("</p>")[0].substring(1)).toString();
-                                }
-                                else {
-                                    sender = room;
-                                    room = null;
-                                    msg = data.get("android.text").toString();
-                                }
-                            }
+                            if (room == null) room = sender;
                             chatHook(sender, msg.trim(), room, isGroupChat, act);
                         }
                     }
