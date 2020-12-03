@@ -32,7 +32,7 @@
 
 ## 제7조 (개인정보의 보호)
 * 지속적인 서비스 악용으로 인하여, Api.papagoTranslate(); 메소드 사용시, 서버에 사용자의 IP 주소가 저장되는거에요.
-* 위 조항과 관련된 것은 [개인정보처리방침](https://github.com/DarkTornado/KakaoTalkBot/blob/master/PrivacyPolicy.md)가 적용되는거에요.
+* 위 조항과 관련된 것은 [개인정보처리방침](https://github.com/DarkTornado/KakaoTalkBot/blob/master/PrivacyPolicy.md)이 적용되는거에요.
 
 
 ## 제8조 (약관 외 준칙)
