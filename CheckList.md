@@ -69,7 +69,7 @@
 * 상단바에 알림이 뜨지 않으니, 봇 구동 앱이 카톡 수신을 인식하지 못해서 봇이 작동하지 않아요
 
 ### 2-2. 자기 자신이 봇이 되는거에요.
-* [2-1.](https://github.com/DarkTornado/KakaoTalkBot/blob/master/CheckList.md#2-1-%EB%B3%B8%EC%9D%B8%EC%9D%B4-%EB%B3%B4%EB%82%B8-%EC%B1%84%ED%8C%85%EC%9D%80-%EC%83%81%EB%8B%A8%EB%B0%94%EC%97%90-%EC%95%8C%EB%A6%BC%EC%9D%B4-%EB%9C%A8%EC%A7%80-%EC%95%8A%EC%95%84%EC%9A%94) 항목 및 [이 게시글](https://blog.naver.com/dt3141592/221552431910)을 참고해주세요.
+* **[2-1.](https://github.com/DarkTornado/KakaoTalkBot/blob/master/CheckList.md#2-1-%EB%B3%B8%EC%9D%B8%EC%9D%B4-%EB%B3%B4%EB%82%B8-%EC%B1%84%ED%8C%85%EC%9D%80-%EC%83%81%EB%8B%A8%EB%B0%94%EC%97%90-%EC%95%8C%EB%A6%BC%EC%9D%B4-%EB%9C%A8%EC%A7%80-%EC%95%8A%EC%95%84%EC%9A%94)** 항목 및 [이 게시글](https://blog.naver.com/dt3141592/221552431910)을 참고해주세요.
 
 ### 2-3. 채팅방을 보고 있으면 봇이 작동하지 않아요.
 * 채팅방 화면에 들어와있으면 카톡 알림이 뜨지 않으니, 봇 역시 작동하지 않아요.
