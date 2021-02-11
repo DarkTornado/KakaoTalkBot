@@ -1,4 +1,5 @@
 # 채팅 자동응답 봇 API2 레퍼런스
+* 채팅 자동응답 봇 개발자가 이상한 사람이라 `레거시 API`와 `API2`를 동시에 사용할 수 있어요.
 
 ## App
 ### android.content.Content getContext();
@@ -77,3 +78,4 @@
 * 봇 컴파일이 시작되면 발생하는 이벤트에요.
 ### String MEMBER_COUNT_CHANGED = "memberChanged"
 * 오픈채팅방 입퇴장 API 사용시 방 인원수가 변하면 발생하는 이벤트에요.
+* **언제든지 불시에 사라질 수도 있어요.**
