@@ -78,7 +78,7 @@
 ### 2-4. 봇을 끄면 디버깅 룸에서만 작동해요.
 * **[1-4.](https://github.com/DarkTornado/KakaoTalkBot/blob/master/CheckList.md#1-4-%EB%B4%87%EC%9D%80-%EC%BC%B0%EB%82%98%EC%9A%94)** 항목을 참고해주세요.
 
-### 2-5. 지금 당장 상단바에 카톡 알림이 뜨고 있는지 확인해주세요.
+### 2-5. 지금 이 순간에 상단바에 카톡 알림이 뜨고 있는지 확인해주세요.
 * 앱을 강제로 종료하거나, RAM을 정리하는 경우, 카톡 앱을 실행할 때 까지 상단바에 카톡 알림이 뜨지 않는 경우도 있어요.
 * **[1-1.](https://github.com/DarkTornado/KakaoTalkBot/blob/master/CheckList.md#1-1-%EC%B9%B4%ED%86%A1-%EC%95%8C%EB%A6%BC%EC%9D%80-%EC%BC%B0%EB%82%98%EC%9A%94)** 항목을 참고해주세요.
 
