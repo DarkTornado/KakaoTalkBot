@@ -1,5 +1,5 @@
 # 채팅 자동응답 봇 API2 레퍼런스
-* 채팅 자동응답 봇 개발자가 이상한 사람이라 `레거시 API`와 `API2`를 동시에 사용할 수 있어요.
+* 채팅 자동응답 봇 개발자가 이상한 사람이라 [레거시 API](Api1.md)와 `API2`를 동시에 사용할 수 있어요.
 
 ## App
 ### android.content.Content getContext();
