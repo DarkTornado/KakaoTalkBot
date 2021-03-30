@@ -59,3 +59,35 @@
 * 해당 봇의 UI 쓰레드에서 `func`를 실행해요.
 ### boolean send(String room, String msg, String packageName);
 * `Api.replyRoom();`와 동일
+
+## Device
+### String getAndroidVersion();
+* 봇을 구동하고 있는 기기의 안드로이드 버전을 반환해요.
+### String getAndroidVersionName();
+* Device.getAndroidVersion();와 동일
+### String getApiLevel();
+* 봇을 구동하고 있는 기기의 API 레벨을 반환해요.
+### String getAndroidVersionCode();
+* Device.getApiLevel();와 동일
+### String getBatteryHealth();
+* 봇을 구동하고 있는 기기의 배터리의 건강 상태를 반환해요.
+### android.content.Intent getBatteryIntent();
+* 봇을 구동하고 있는 기기의 배터리 관련 Intent를 반환해요.
+### String getBatteryLevel();
+* 봇을 구동하고 있는 기기의 배터리의 잔량을 반환해요. 단위는 %.
+### String getBatteryStatus();
+* 봇을 구동하고 있는 기기의 배터리의 상태를 반환해요.
+### String getBatteryTemp();
+* 봇을 구동하고 있는 기기의 배터리의 온도을 반환해요. 단위는 ℃.
+### int getBatteryVoltage();
+* 봇을 구동하고 있는 기기의 배터리의 전압을 반환해요.
+### android.os.Build getBuild();
+* android.os.Build();의 값 반환해요.
+### String getModelName();
+* 봇을 구동하고 있는 기기의 모델명을 반환해요.
+### String getPhoneModel();
+* Device.getModelName();와 동일
+### String getPhoneBrand();
+* 봇을 구동하고 있는 기기를 만든 제조사를 반환해요.
+### boolean isCharging();
+* 봇을 구동하고 있는 기기의 배터리가 충전중인지 아닌지 반환해요.
