@@ -9,8 +9,8 @@
 
 ## Bot
 * BotManager 클래스를 통해 가지고온 Bot 인스턴스에서 사용할 수 있는 method들이에요.
-### void addEventListener(String eventName, Function listener);
-* 이벤트 리스너를 등록하는거에요.
+### void addListener(String eventName, Function listener);
+* 이벤트 리스너를 등록해요.
 ### boolean canReply(String room\[, String packageName\]);
 * 해당 방으로 채팅을 보낼 수 있는지 반환해요.
 * `packageName` 생략시 가장 최근에 알림이 수신된 메신저 앱을 기준으로 작동해요.
@@ -24,10 +24,10 @@
 ### markAsRead(String room\[, String packageName\]);
 * 해당 패키지명을 가진 메신저 앱의 해당 채팅방의 채팅을 읽음처리 해요.
 * `packageName` 생략시 가장 최근에 알림이 수신된 메신저 앱을 기준으로 작동해요.
-### void removeAllEventListener(String eventName, Function listener);
-* 등록된 모든 이벤트 리스너를 삭제하는거에요.
-### void removeEventListener(String eventName, Function listener);
-* 등록된 이벤트 리스너를 삭제하는거에요.
+### void removeAllListener(String eventName, Function listener);
+* 등록된 모든 이벤트 리스너를 삭제해요.
+### void removeListener(String eventName, Function listener);
+* 등록된 이벤트 리스너를 삭제해요.
 ### void setCommandPrefix(String prefix);
 * 명령어의 시작 문자열을 설정해요.
 * 수신된 채팅 내용이 prefix로 시작하면 `Event.COMMAND` 이벤트가 발생해요.
