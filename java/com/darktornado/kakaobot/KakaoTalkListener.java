@@ -47,21 +47,10 @@ public class KakaoTalkListener extends NotificationListenerService {
                         if (act.title.toString().toLowerCase().contains("reply") ||
                                 act.title.toString().toLowerCase().contains("답장")) {
                             Bundle data = sbn.getNotification().extras;
-                            String room, sender, msg;
-                            boolean isGroupChat = data.get("android.text") instanceof SpannableString;
-                            if (Build.VERSION.SDK_INT > 23) {
-                                room = data.getString("android.summaryText");
-                                if (room == null) isGroupChat = false;
-                                else isGroupChat = true;
-                                sender = data.get("android.title").toString();
-                                msg = data.get("android.text").toString();
-                            } else {
-                                room = data.getString("android.subText");
-                                msg = data.getString("android.text");
-                                sender = data.getString("android.title");
-                                if (room == null) isGroupChat = false;
-                                else isGroupChat = true;
-                            }
+                            String sender = data.getString("android.title");
+                            String msg = data.getString("android.text");
+                            String room = data.getString(Build.VERSION.SDK_INT > 23 ? "android.summaryText" : "android.subText");
+                            boolean isGroupChat = room != null;
                             if (room == null) room = sender;
                             chatHook(sender, msg.trim(), room, isGroupChat, act);
                         }
