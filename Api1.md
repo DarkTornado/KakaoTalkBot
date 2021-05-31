@@ -21,9 +21,10 @@
 * 해당 패키지명을 가진 메신저 앱의 해당 채팅방의 채팅을 읽음처리 해요.
 * `packageName` 생략시 가장 최근에 알림이 수신된 메신저 앱을 기준으로 작동해요.
 ### String papagoTranslate(String lang1, String lang2, String value);
-* 파파고 번역
+* 파파고 번역.
+* `value`의 언어를 `lang1`이라고 가정하고, `lang2` 언어로 번역해요.
 ### String papagoTranslate(String lang1, String lang2, String value, String id, String secret);
-* 파파고 번역
+* 위와 동일하지만, 사용자가 발급받은 `Client Id`와 `Client Secret`를 사용할 수 있어요.
 ### int prepare(String botName);
 * 해당 이름을 가진 봇이 리로드된 적이 없다면 리로드해요. 리로드 된 적이 없으면 2, 리로드 성공시 1, 리로드 실패시 0을 반환해요.
 ### void off(String botName);
