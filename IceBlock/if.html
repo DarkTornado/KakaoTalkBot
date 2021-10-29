@@ -1,0 +1,128 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no width=device-width" />
+    <title>
+        IceBlock.js - 조건 시작
+    </title>
+</head>
+<style>
+a.ListView{
+ display : block;
+ margin : 15px 15px 15px 15px;
+}
+input.Button{
+ width : 100%;
+ height : 43px;
+ background : #EEEEEE;
+ border : 0;
+ box-shadow : 1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+</style>
+<body bgcolor=#FFFFFF style="margin:0px 0px 0px 0px;">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div id="drawer" style="margin:40px 0px 0px 0px;background:#80DEEA;height:100%;width:0px;position:fixed;transition:0.3s;overflow-x:hidden;box-shadow:0px 40px 50px 0px rgba(0, 0, 0, 0.4);">
+<font color=WHITE size='5px' face='arial'>
+<a style="display:block;margin:35px 15px 15px 15px;" onclick="location.href='index.html';">메인 홈페이지</a>
+<a class=ListView onclick="movePage(0);">개요</a>
+<a class=ListView onclick="movePage(1);">조건 시작</a>
+<a class=ListView onclick="movePage(2);">조건 끝</a>
+<a class=ListView onclick="movePage(3);">답장</a>
+<a class=ListView onclick="movePage(4);">변수 생성</a>
+<a class=ListView onclick="movePage(5);">변수 값 설정 / 변경</a>
+<a class=ListView onclick="movePage(6);">반복 시작</a>
+<a class=ListView onclick="movePage(7);">반복 끝</a>
+<a class=ListView onclick="movePage(8);">동작 실행</a>
+<a class=ListView onclick="movePage(9);">태그 목록</a>
+</font>
+</div>
+<div style="background:#26C6DA;padding:13px 13px 13px 13px;box-shadow:0px 4px 5px 0px rgba(0, 0, 0, 0.3);width:100%;position:fixed;">
+<font color=WHITE size="5px" face="arial">
+<a id="naviIcon" onclick="openOrClose(this);" style="position:relative;top:3px;"><i class="material-icons">&#xE5D2;</i></a>&nbsp;
+조건 시작
+</font>
+</div>
+<div style="padding:65px 20px 20px 20px;">
+    <font color=BLACK size='4px'>
+	<p>&nbsp;
+	블록 종류에서 '조건 시작'을 선택하시면 다음과 같은 창이 뜹니다.
+	</p>
+	<img src="images/if_1.png" width=100%>
+	<p>&nbsp;
+	이 곳에서 설정한 조건을 만족하면, '조건' 블록과 '조건 끝' 블록 사이에 있는 내용이 실행됩니다.
+	</p>
+	<img src="images/if_2.png" width=100%><br><br>
+	수신된 채팅 : 수신된 채팅을 의미합니다.<br>
+	채팅이 수신된 방 : 채팅이 수신된 방의 이름을 의미합니다.<br>
+	채팅을 보낸 사람 : 채팅을 보낸 사람의 닉네임을 의미합니다.<br>
+	명렁어 부분 : 수신된 채팅의 내용을 띄어쓰기 단위로 잘랐을 때, 가장 앞부분을 의미합니다.<br>
+	인자 부분 : 수신된 채팅의 내용애서 '명령어 부분'을 제외한 부분을 의미합니다.<br>
+	변수 : 변수를 의미합니다. 변수에 저장된 값을 비교할 때 사용됩니다.<br><br>
+	<img src="images/if_3.png" width=100%><br><br>
+	수신된 채팅 : 수신된 채팅을 의미합니다.<br>
+	채팅이 수신된 방 : 채팅이 수신된 방의 이름을 의미합니다.<br>
+	채팅을 보낸 사람 : 채팅을 보낸 사람의 닉네임을 의미합니다.<br>
+	변수 : 변수를 의미합니다. 변수에 저장된 값을 비교할 때 사용됩니다.<br>
+	값 : 값을 의미합니다.<br><br>
+	<img src="images/if_4.png" width=100%><br><br>
+	같다 : 위 내용과 아래 내용이 같은지 확인합니다.<br>
+	다르다 : 위 내용과 아래 내용이 다른지 확인합니다.<br>
+	이상 : 위 내용이 아래 내용보다 크거나 같은지 확인합니다.<br>
+	이하 : 위 내용이 아래 내용보다 작거나 같은지 확인합니다.<br>
+	초과 : 위 내용이 아래 내용보다 큰지 확인합니다.<br>
+	미만 : 위 내용이 아래 내용보다 작은지 확인합니다.<br>
+	포함 : 위 내용에 아래 내용이 포함되어 있는지 확인합니다.<br>
+	포함 : 위 내용의 시작 부분이 아래 내용과 일치하는지 확인합니다.<br><br>
+	<p>&nbsp;
+	변수나 값을 선택하는 경우, 다음과 같이 변수의 이름 또는 값을 입력하는 텍스트 입력란이 나옵니다.
+	</p>
+	<img src="images/if_5.png" width=100%>
+	<p>&nbsp;
+	다음은 '테스트'라는 채팅이 수신된 경우라는 조건이며,
+	</p>
+	<img src="images/if_6.png" width=100%>
+	<p>&nbsp;
+	확인 버튼을 누르면 다음과 같이 '조건' 블록이 추가됩니다.
+	</p>
+	<img src="images/if_7.png" width=100%>
+    </font>
+</div>
+<hr>
+<font color=BLACK size='2sp'>
+    <p align=center>© 2020 Dark Tornado, All rights reserved.</p>
+</font>
+<script>
+var isOpened = false;
+function openOrClose(btn){
+if(btn==null) btn = document.getElementById("naviIcon");
+if(isOpened){
+closeDrawer();
+btn.innerHTML = '<i class="material-icons">&#xE5D2;</i>';
+}
+else{
+openDrawer();
+btn.innerHTML = '<i class="material-icons">&#xE5C4;</i>';
+}
+}
+function openDrawer() {
+document.getElementById("drawer").style.width = "73%";
+isOpened = true;
+if(window.android!=null) window.android.drawerListener(true);
+}
+
+function closeDrawer() {
+document.getElementById("drawer").style.width = "0";
+isOpened = false;
+if(window.android!=null) window.android.drawerListener(false);
+}
+
+function movePage(pageId){
+if(isOpened) openOrClose();
+var pages = ["intro", "if", "if2", "reply", "var", "var2", "for", "for2", "func", "tags"];
+location.href=pages[pageId]+".html";
+}
+</script>
+</body>
+</html>
+

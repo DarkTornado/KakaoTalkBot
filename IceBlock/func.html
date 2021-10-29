@@ -1,0 +1,132 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no width=device-width" />
+    <title>
+        IceBlock.js - 동작 실행
+    </title>
+</head>
+<style>
+a.ListView{
+ display : block;
+ margin : 15px 15px 15px 15px;
+}
+input.Button{
+ width : 100%;
+ height : 43px;
+ background : #EEEEEE;
+ border : 0;
+ box-shadow : 1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+</style>
+<body bgcolor=#FFFFFF style="margin:0px 0px 0px 0px;">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div id="drawer" style="margin:40px 0px 0px 0px;background:#80DEEA;height:100%;width:0px;position:fixed;transition:0.3s;overflow-x:hidden;box-shadow:0px 40px 50px 0px rgba(0, 0, 0, 0.4);">
+<font color=WHITE size='5px' face='arial'>
+<a style="display:block;margin:35px 15px 15px 15px;" onclick="location.href='index.html';">메인 홈페이지</a>
+<a class=ListView onclick="movePage(0);">개요</a>
+<a class=ListView onclick="movePage(1);">조건 시작</a>
+<a class=ListView onclick="movePage(2);">조건 끝</a>
+<a class=ListView onclick="movePage(3);">답장</a>
+<a class=ListView onclick="movePage(4);">변수 생성</a>
+<a class=ListView onclick="movePage(5);">변수 값 설정 / 변경</a>
+<a class=ListView onclick="movePage(6);">반복 시작</a>
+<a class=ListView onclick="movePage(7);">반복 끝</a>
+<a class=ListView onclick="movePage(8);">동작 실행</a>
+<a class=ListView onclick="movePage(9);">태그 목록</a>
+</font>
+</div>
+<div style="background:#26C6DA;padding:13px 13px 13px 13px;box-shadow:0px 4px 5px 0px rgba(0, 0, 0, 0.3);width:100%;position:fixed;">
+<font color=WHITE size="5px" face="arial">
+<a id="naviIcon" onclick="openOrClose(this);" style="position:relative;top:3px;"><i class="material-icons">&#xE5D2;</i></a>&nbsp;
+동작 실행
+</font>
+</div>
+<div style="padding:65px 20px 20px 20px;">
+    <font color=BLACK size='4px'>
+	<p>&nbsp;
+	블록 종류에서 '동작 실행'을 선택하시면 다음과 같은 창이 뜹니다.
+	</p>
+	<img src="images/func_1.png" width=100%>
+	<p>&nbsp;
+	현재 지원하고 있는 동작들은 다음과 같습니다.
+	</p>
+	<img src="images/func_2.png" width=100%>
+	<p>&nbsp;
+	다음은 '토스트다냥'이라는 토스트를 띄우는 예시입니다. 토스트 생성은 딱히 반환하는 값이 없음으로, '동작을 실행한 결과가 저장될 변수'는 생략하였습니다.
+	</p>
+	<img src="images/func_3.png" width=100%>
+	<p>&nbsp;
+	토스트 출력과는 달리 동작을 위해 값을 넘길 필요가 없는 경우는 다음과 같이 '토스트 내용' 등을 입력하는 텍스트 입력란이 사라집니다.
+	</p>
+	<img src="images/func_4.png" width=100%>
+	<br><br>
+	<p>&nbsp;
+	다음은 현재 시간을 가지고오는 예시입니다. 일단, 현재 시간 중 '시' 부분이 저장될 변수(hour)를 만들고(변수의 이름이 꼭 사진과 같을 필요는 없습니다),
+	</p>
+	<img src="images/func_5.png" width=100%>
+	<p>&nbsp;
+	현재 시간 중 '분' 부분이 저장될 변수(min)를 만듭니다.
+	</p>
+	<img src="images/func_6.png" width=100%>
+	<p>&nbsp;
+	그리고, 변수 hour에 현재 시간 중 '시' 부분을 가지고오는 동작을 수행한 결과를 저장하고
+	</p>
+	<img src="images/func_7.png" width=100%>
+	<p>&nbsp;
+	변수 min에는 현재 시간 중 '분' 부분을 가지고오는 동작을 수행한 결과를 저장한 뒤,
+	</p>
+	<img src="images/func_8.png" width=100%>
+	<p>&nbsp;
+	각 변수들에 저장된 값을 다음과 같이 인용합니다.
+	</p>
+	<img src="images/func_9.png" width=100%>
+	<p>&nbsp;
+	'동작 테스트'라는 채팅이 수신되면, 토스트 메시지와 함께 현재 시간을 출력하는 기능이 완성되었습니다.
+	</p>
+	<img src="images/func_10.jpg" width=100%>
+	<p>&nbsp;
+	실행 결과 : 
+	</p>
+	<img src="images/func_11.png" width=100%>
+    </font>
+</div>
+<hr>
+<font color=BLACK size='2sp'>
+    <p align=center>© 2020 Dark Tornado, All rights reserved.</p>
+</font>
+<script>
+var isOpened = false;
+function openOrClose(btn){
+if(btn==null) btn = document.getElementById("naviIcon");
+if(isOpened){
+closeDrawer();
+btn.innerHTML = '<i class="material-icons">&#xE5D2;</i>';
+}
+else{
+openDrawer();
+btn.innerHTML = '<i class="material-icons">&#xE5C4;</i>';
+}
+}
+function openDrawer() {
+document.getElementById("drawer").style.width = "73%";
+isOpened = true;
+if(window.android!=null) window.android.drawerListener(true);
+}
+
+function closeDrawer() {
+document.getElementById("drawer").style.width = "0";
+isOpened = false;
+if(window.android!=null) window.android.drawerListener(false);
+}
+
+function movePage(pageId){
+if(isOpened) openOrClose();
+var pages = ["intro", "if", "if2", "reply", "var", "var2", "for", "for2", "func", "tags"];
+location.href=pages[pageId]+".html";
+}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,91 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no width=device-width" />
+    <title>
+        IceBlock.js - 조건 끝
+    </title>
+</head>
+<style>
+a.ListView{
+ display : block;
+ margin : 15px 15px 15px 15px;
+}
+input.Button{
+ width : 100%;
+ height : 43px;
+ background : #EEEEEE;
+ border : 0;
+ box-shadow : 1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+</style>
+<body bgcolor=#FFFFFF style="margin:0px 0px 0px 0px;">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div id="drawer" style="margin:40px 0px 0px 0px;background:#80DEEA;height:100%;width:0px;position:fixed;transition:0.3s;overflow-x:hidden;box-shadow:0px 40px 50px 0px rgba(0, 0, 0, 0.4);">
+<font color=WHITE size='5px' face='arial'>
+<a style="display:block;margin:35px 15px 15px 15px;" onclick="location.href='index.html';">메인 홈페이지</a>
+<a class=ListView onclick="movePage(0);">개요</a>
+<a class=ListView onclick="movePage(1);">조건 시작</a>
+<a class=ListView onclick="movePage(2);">조건 끝</a>
+<a class=ListView onclick="movePage(3);">답장</a>
+<a class=ListView onclick="movePage(4);">변수 생성</a>
+<a class=ListView onclick="movePage(5);">변수 값 설정 / 변경</a>
+<a class=ListView onclick="movePage(6);">반복 시작</a>
+<a class=ListView onclick="movePage(7);">반복 끝</a>
+<a class=ListView onclick="movePage(8);">동작 실행</a>
+<a class=ListView onclick="movePage(9);">태그 목록</a>
+</font>
+</div>
+<div style="background:#26C6DA;padding:13px 13px 13px 13px;box-shadow:0px 4px 5px 0px rgba(0, 0, 0, 0.3);width:100%;position:fixed;">
+<font color=WHITE size="5px" face="arial">
+<a id="naviIcon" onclick="openOrClose(this);" style="position:relative;top:3px;"><i class="material-icons">&#xE5D2;</i></a>&nbsp;
+조건 끝
+</font>
+</div>
+<div style="padding:65px 20px 20px 20px;">
+    <font color=BLACK size='4px'>
+	<p>&nbsp;
+	블록 종류에서 '조건 끝'을 선택하시면 별도의 선택 창이 뜨지 않고, 다음과 같이 '조건 끝' 블록이 추가됩니다.
+	</p>
+	<img src="images/if2.png" width=100%>
+    </font>
+</div>
+<hr>
+<font color=BLACK size='2sp'>
+    <p align=center>© 2020 Dark Tornado, All rights reserved.</p>
+</font>
+<script>
+var isOpened = false;
+function openOrClose(btn){
+if(btn==null) btn = document.getElementById("naviIcon");
+if(isOpened){
+closeDrawer();
+btn.innerHTML = '<i class="material-icons">&#xE5D2;</i>';
+}
+else{
+openDrawer();
+btn.innerHTML = '<i class="material-icons">&#xE5C4;</i>';
+}
+}
+function openDrawer() {
+document.getElementById("drawer").style.width = "73%";
+isOpened = true;
+if(window.android!=null) window.android.drawerListener(true);
+}
+
+function closeDrawer() {
+document.getElementById("drawer").style.width = "0";
+isOpened = false;
+if(window.android!=null) window.android.drawerListener(false);
+}
+
+function movePage(pageId){
+if(isOpened) openOrClose();
+var pages = ["intro", "if", "if2", "reply", "var", "var2", "for", "for2", "func", "tags"];
+location.href=pages[pageId]+".html";
+}
+</script>
+</body>
+</html>
+
