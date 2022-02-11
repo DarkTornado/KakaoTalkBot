@@ -8,10 +8,11 @@
 * `Api.reload();`와 동일
 ### void gc();
 * 가비지 콜랙터를 강제로 실행해요.
+* 사실 `java.lang.System.gc();` 호출이에요.
 ### android.content.Content getContext();
 * 봇 구동 서비스의 Context를 반환해요.
 ### String[] getRoomList(String packageName);
-* 모든 방 목록을 불러와요.
+* 모든 방 목록(정확히는 응답 전송이 가능한 방 목록)을 불러와요.
 * `packageName` 생략시 가장 최근에 알림이 수신된 메신저 앱을 기준으로 작동해요.
 ### String[] getScriptNames();
 * 모든 봇 목록을 불러와요.
@@ -60,6 +61,24 @@
 * 해당 봇의 UI 쓰레드에서 `func`를 실행해요.
 ### boolean send(String room, String msg, String packageName);
 * `Api.replyRoom();`와 동일
+
+## Bridge
+### boolean evaluateStringIn(String botName, String src);
+* 해당 봇의 전역 스코프에서 해당 소스를 실행해요.
+### String getGlobalVariable(String name);
+* `단순 자동응답` 기능에 있는 해당 이름을 가진 `[[전체변수]]`에 저장된 값을 가지고와요.
+### ScriptableObject getScopeOf(String botName);
+* 해당 봇의 전역 스코프를 가지고와요.
+### String getVariable(String room, String name);
+* `단순 자동응답` 기능에 있는 해당 이름을 가진 `[[변수]]`에 저장된 값을 가지고와요.
+* `[[변수]]` 태그는 방마다 따로따로 처리되기 때문에 방 이름도 함께 넘겨야 해요.
+### boolean isAllowed(String botName);
+* 해당 봇의 전역 스코프에 `Bridge`로 접근할 수 있는지 반환해요.
+### String setGlobalVariable(String name, String value);
+* `단순 자동응답` 기능에 있는 해당 이름을 가진 `[[전체변수]]`에 `value`를 저장해요.
+### String setVariable(String room, String name, String value);
+* `단순 자동응답` 기능에 있는 해당 이름을 가진 `[[변수]]`에  `value`를 저장해요.
+* `[[변수]]` 태그는 방마다 따로따로 처리되기 때문에 방 이름도 함께 넘겨야 해요.
 
 ## Device
 ### String getAndroidVersion();
