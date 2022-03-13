@@ -235,3 +235,34 @@ function onNotificationPosted(sbn, sm) {
 ### void info(String log, boolean isGlobal);
 * 로거에 로그를 기록해요.
 * `isGlobal`가 `true`라면 글로벌 로그로 기록해요.
+
+## Utils
+### String getWebText(String url, boolean removeTags);
+* `jsoup` 라이브러리를 통해 해당 `url`의 소스를 긁어서 문자열로 반환해요.
+* `removeTags`가 `true`라면 HTML 태그들을 모두 삭제한 결과를 반환해요.
+### String getWebText2(String url, String encoding);
+* `java.net` 패키지를 통해 해당 `url`의 소스를 긁어와요.
+### Document parse(String url);
+* `jsoup` 라이브러리를 통해 해당 `url`의 소스를 긁어서 `Document` 인스턴스로 반환해요.
+
+### String compress(String value);
+* 투명문자 1000개를 반환해요.
+### void copyToClipboard(String value);
+* `value`를 복사해요.
+### void delay(int mil);
+* `mil`밀리초 동안 딜레이
+### String getHtmlFromWeb(String url);
+* `Utils.getWebText2(url, "UTF-8");` 과 동일해요.
+* 구버전 호환을 위해 남아있는 함수로, 사용하지 않는 것을 권장해요.
+### String removeTags(String html);
+* 인자로 넘긴 문자열에 있는 HTML 태그들을 지워요.
+### void sleep(int mil);
+* `Utils.delay(mil);`과 동일
+### void toast(String msg);
+* 토스트 메시지로 `msg`를 출력해요.
+### void vibrate(double sec);
+* `sec`초 동안 진동
+
+### String translate(String lang1, String lang2, String value);
+* 더 이상 작동하지 않는 번역 함수에요.
+* `Api.papagoTranslate();` 함수를 사용해주세요.
