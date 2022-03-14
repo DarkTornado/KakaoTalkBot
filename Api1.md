@@ -254,6 +254,16 @@ function onNotificationPosted(sbn, sm) {
 ### String getHtmlFromWeb(String url);
 * `Utils.getWebText2(url, "UTF-8");` 과 동일해요.
 * 구버전 호환을 위해 남아있는 함수로, 사용하지 않는 것을 권장해요.
+### String getWeatherJSON(String location);
+* 기상청에서 `location`의 날씨 정보를 가져와요.
+* 일부 지역만 지원해요.
+### String getWeatherJSON(String zoneId);
+* 기상청에서 행정구역코드가 `zoneId`인 위치의 날씨 정보를 가져와요.
+* 국내 지역만 지원해요.
+### String getZoneIdByName(String location);
+* `location`의 행정구역코드를 가지고와요.
+### String removeRLO(String str);
+* 반전문자 삭제
 ### String removeTags(String html);
 * 인자로 넘긴 문자열에 있는 HTML 태그들을 지워요.
 ### void sleep(int mil);
