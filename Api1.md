@@ -148,6 +148,7 @@ function onNotificationPosted(sbn, sm) {
 * 해당 봇의 전역 스코프에 `Bridge`로 접근할 수 있는지 반환해요.
 ### ScriptableObject getScopeOf(String botName);
 * 해당 봇의 전역 스코프를 가지고와요.
+
 ### boolean evaluateStringIn(String botName, String src);
 * 해당 봇의 전역 스코프에서 해당 소스를 실행해요.
 ### String getGlobalVariable(String name);
@@ -207,6 +208,7 @@ function onNotificationPosted(sbn, sm) {
 * `FileStream.saveJson(path, json);`과 동일
 ### boolean remove(String path);
 * 해당 파일 삭제
+
 ### boolean copyFile(String path1, String path2);
 * 파일 복사. 복사 성공시 `true`를 반환해요
 ### boolean createDir(String path);
