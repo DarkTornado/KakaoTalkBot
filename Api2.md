@@ -56,7 +56,7 @@
 * 해당 봇을 키거나 꺼요.
 
 ## Database
-* `내장메모리/ChatBot/database/` 폴더 내부에 파일 입/출력을 해줘요.
+* `/내장메모리/ChatBot/database/` 폴더 내부에 파일 입/출력을 해줘요.
 ### boolean exists(String fileName);
 * 해당 파일이 존재하는지 반환해요.
 ### Object readObject(String fileName);
