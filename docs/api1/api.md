@@ -5,7 +5,7 @@ parent: Legacy API
 ---
 
 # Api
-* 이 API 증 일부는 `메신저봇`에도 있습니다.
+* 이 API 증 일부는 `메신저봇`에도 있어요.
 
 ## boolean canReply(String room, String pack);
 * 해당 채팅방으로 채팅을 보낼 수 있는지 반환해요. 

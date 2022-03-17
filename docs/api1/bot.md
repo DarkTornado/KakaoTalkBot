@@ -5,7 +5,7 @@ parent: Legacy API
 ---
 
 # Bot
-* 이 API는 `채팅 자동응답 봇`에만 있습니다.
+* 이 API는 `채팅 자동응답 봇`에만 있어요.
 
 ### android.content.Content getContext();
 * 봇 구동 서비스의 Context를 반환해요.

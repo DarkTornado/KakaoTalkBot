@@ -7,7 +7,7 @@ nav_order: 1
 
 # 이벤트 리스너
 
-* 어떠한 이벤트가 발생하면 호출되는 함수입니다.
+* 어떠한 이벤트가 발생하면 호출되는 함수에요.
 
 ## function response(String room, String msg, String sender, boolean isGroupChat, Replier replier, ImageDB imageDB, String packageName)
 * 채팅이 수신되면 호출되는 이벤트 리스너
