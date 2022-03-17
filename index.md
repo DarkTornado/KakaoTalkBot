@@ -11,5 +11,5 @@ permalink: /
 * PC면 옆에 있는 목록에서, 모바일이라면 오른쪽 위에 있는 버튼을 누르면 나오는 목록에서 원하는 항목을 찾아주세요.
 * 여기서 다루는 API는 자바스크립트, 커피스크립트, 비쥬얼베이직을 사용하여 봇을 만드는 경우를 기준으로 설명되어있어요.
 
-* [일반 자동응답 사용법](https://darktornado.github.io/KakaoTalkBot/IceBlock/)
+* [일반 자동응답(IceBlock.js) 사용법](https://darktornado.github.io/KakaoTalkBot/IceBlock/)
 * [개발자 블로그](https://blog.naver.com/dt3141592)
