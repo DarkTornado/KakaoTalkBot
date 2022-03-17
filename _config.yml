@@ -16,7 +16,7 @@
 title: 채팅 자동응답 봇
 description: 채팅 자동응답 봇 문서
 baseurl: "/KakaoTalkBot" # the subpath of your site, e.g. /blog
-url: "https://darktornado.github.io/KakaoTalkBot" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://darktornado.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"
