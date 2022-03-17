@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Event
+title: Database
 parent: API 2
 ---
 

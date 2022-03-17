@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Event
+title: App
 parent: API 2
 ---
 

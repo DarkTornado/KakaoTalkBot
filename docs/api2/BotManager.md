@@ -4,6 +4,8 @@ title: BotManager
 parent: API 2
 ---
 
+# BotManager
+
 ## boolean compile(String botName);
 * 해당 봇을 리로드(컴파일)시켜요.
 * 성공시 `true`, 실패시 `false`를 반환해요.
