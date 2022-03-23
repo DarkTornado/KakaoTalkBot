@@ -13,13 +13,13 @@ parent: Legacy API
 ## String getAndroidVersionName();
 * Device.getAndroidVersion();와 동일
 
-## String getApiLevel();
+## int getApiLevel();
 * 봇을 구동하고 있는 기기의 API 레벨을 반환해요.
 
-## String getAndroidVersionCode();
+## int getAndroidVersionCode();
 * Device.getApiLevel();와 동일
 
-## String getBatteryHealth();
+## int getBatteryHealth();
 * 봇을 구동하고 있는 기기의 배터리의 건강 상태를 반환해요.
 
 ## android.content.Intent getBatteryIntent();
@@ -28,10 +28,10 @@ parent: Legacy API
 ## String getBatteryLevel();
 * 봇을 구동하고 있는 기기의 배터리의 잔량을 반환해요. 단위는 %.
 
-## String getBatteryStatus();
+## int getBatteryStatus();
 * 봇을 구동하고 있는 기기의 배터리의 상태를 반환해요.
 
-## String getBatteryTemp();
+## double getBatteryTemp();
 * 봇을 구동하고 있는 기기의 배터리의 온도을 반환해요. 단위는 ℃.
 
 ## int getBatteryVoltage();
