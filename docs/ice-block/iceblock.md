@@ -2,6 +2,7 @@
 layout: default
 title: 일반 자동응답
 nav_order: 5
+has_children: true
 ---
 
 # 일반 자동응답 (IceBlock.js)
