@@ -5,8 +5,25 @@ parent: Legacy API
 ---
 
 # Log
-* 이 API는 `메신저봇`에도 있지만, 사용법이 조금 달라요.
 * 각각 Log.d();, Log.e();, Log.i();로도 사용할 수 있어요.
+* 채팅 자동응답 봇 `5.0 beta 2`부터 메신저봇과 사용법이 동일하게 수정되었어요.
+
+## void debug(String log, boolean showToast);
+* 로거에 녹색 글씨로 로그를 기록해요.
+* `showToast`가 `true`라면 로그가 토스트 메시지로도 출력될거에요.
+
+## void error(String log, boolean showToast);
+* 로거에 빨간색 글씨로 로그를 기록해요.
+* `showToast`가 `true`라면 로그가 토스트 메시지로도 출력될거에요.
+
+## void info(String log, boolean showToast);
+* 로거에 로그를 기록해요.
+* `showToast`가 `true`라면 로그가 토스트 메시지로도 출력될거에요.
+
+***
+
+# 옛날 Log
+* 채팅 자동응답 봇 `5.0 beta`이하 버전에서는 메신저봇과 사용법이 조금 달랐어요.
 
 ## void debug(String log, boolean isGlobal);
 * 로거에 로그를 기록해요.

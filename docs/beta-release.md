@@ -15,6 +15,7 @@ nav_order: 9
 ![]({{ site.imageurl }}beta-download.png)
 
 ### 현재 출시된 베타 버전
+* [버전 5.0 beta 2](https://github.com/DarkTornado/KakaoTalkBot/releases/tag/v5.0_beta_2)
 * [버전 5.0 beta](https://github.com/DarkTornado/KakaoTalkBot/releases/tag/v5.0_beta)
 
 ***
