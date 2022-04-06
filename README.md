@@ -1,4 +1,4 @@
-# 카카오톡 봇+ / 채팅 자동응답 봇
+# 채팅 자동응답 봇 (구 카카오톡 봇+)
 
 © 2018-2022 Dark Tornado, All rights reserved.
 
@@ -6,4 +6,4 @@
 * [Deep Dark License](https://github.com/DarkTornado/DeepDarkLicense) Type A가 적용되어 있어요.
 
 ## 채팅 자동응답 봇 문서
-* [여기](https://darktornado.github.io/KakaoTalkBot/)에요.
+* [여기](https://darktornado.github.io/KakaoTalkBot/)를 누르면 이동할거에요.
