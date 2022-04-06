@@ -2,6 +2,7 @@
 layout: default
 title: 간단한 태그들
 parent: 단순 자동응답
+nav_order: 1
 ---
 
 # 간단한 태그들
