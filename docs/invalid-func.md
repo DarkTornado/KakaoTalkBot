@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 구현할 수 없는 것
-nav_order: 8
+nav_order: 9
 ---
 
 
