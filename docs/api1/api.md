@@ -38,9 +38,19 @@ parent: Legacy API
 ## boolean isOn(String botName);
 * 해당 이름을 가진 봇이 켜졌는지 확인해요.
 
+## void makeNoti(String title, String content, int id)
+* 상단바에 제목이 `title`, 내용은 `content`인 알림을 띄워요.
+* `id`가 같으면 덮어씌우는데, 10 이하인 id들은 앱 자체에서 사용하는 영역이니 10 이상으로 사용하는 것을 권장해요.
+
 ## boolean markAsRead(String room, String packageName);
 * 해당 패키지명을 가진 메신저 앱의 해당 채팅방의 채팅을 읽음처리 해요.
 * `packageName` 생략시 가장 최근에 알림이 수신된 메신저 앱을 기준으로 작동해요.
+
+## void off(String botName);
+* 해당 이름을 가진 봇을 꺼요.
+
+## void on(String botName);
+* 해당 이름을 가진 봇을 켜요.
 
 ## String papagoTranslate(String lang1, String lang2, String value);
 * 파파고 번역.
@@ -51,12 +61,6 @@ parent: Legacy API
 
 ## int prepare(String botName);
 * 해당 이름을 가진 봇이 리로드된 적이 없다면 리로드해요. 리로드 된 적이 없으면 2, 리로드 성공시 1, 리로드 실패시 0을 반환해요.
-
-## void off(String botName);
-* 해당 이름을 가진 봇을 꺼요.
-
-## void on(String botName);
-* 해당 이름을 가진 봇을 켜요.
 
 ## boolean reload(String botName);
 * 해당 이름을 가진 봇을 리로드해요.
