@@ -24,6 +24,7 @@ parent: Legacy API
 
 # 옛날 Log
 * 채팅 자동응답 봇 `5.0 beta`이하 버전에서는 메신저봇과 사용법이 조금 달랐어요.
+* 글로벌 로그를 남기고 싶으시다면, `GlobalLog`를 참고해주세요.
 
 ## void debug(String log, boolean isGlobal);
 * 로거에 로그를 기록해요.
