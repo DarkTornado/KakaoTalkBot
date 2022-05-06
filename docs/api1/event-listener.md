@@ -13,7 +13,7 @@ nav_order: 1
 * 채팅이 수신되면 호출되는 이벤트 리스너
 
 ```javascript
-function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName) {
+function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName, isMultiChat) {
 /*
  * room - 채팅이 수신된 채팅방의 방 이름. 1:1채팅방이라면 채팅을 보낸 사람의 닉네임
  * msg - 수신된 채팅 내용
@@ -36,6 +36,7 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName)
    - .getImage(); - 사진이 수신된 경우, 해당 사진을 Base64로 인코딩된 문자열로 가지고 옴
    - .getImageBitmap(); - 사진이 수신된 경우, 해당 사진을 android.graphics.Bitmap 인스턴스로 가지고 옴
  * packageName - 채팅이 수신된 앱의 패키지명
+ * isMultiChat - 듀얼 메신저 등으로 복제된 앱이라면 true, 아니라면 false. 배포 중인 버전에는 아직 미구현
  */
 }
 ```
