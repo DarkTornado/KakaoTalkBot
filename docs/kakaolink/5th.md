@@ -48,6 +48,7 @@ Kakao.send("방 이름", {
 });
 ```
 
+
 * 일부 항목들을 생략한다면 표시되지 않아요. 위에 보이는 예시같은 경우는 대충 다음과 같아요.
 
 ```javascript
@@ -57,10 +58,10 @@ Kakao.send(room, {
         "object_type": "feed",
         "button_title": "",
         "content": {
-            "title": "Lv.255 DarkTornado\n서버 : 루나, 직업 : 나이트로드",
+            "title": "Lv.255 DarkTornado",
             "image_url": "캐릭터 이미지 주소",
             "link": {},
-            "description": "랭킹 경험치 등등 이것저것",
+            "description": "서버 : 루나, 직업 : 나이트로드\n랭킹 : 85,015위",
         },
         "buttons": [{
             "title": "",
@@ -70,3 +71,5 @@ Kakao.send(room, {
     }
 });
 ```
+
+* 아무튼 해당 카카오링크를 보낸 소스는 [이곳을 눌러서 확인 가능](https://github.com/DarkTornado/KakaoTalkBot-Examples/blob/master/MapleStoryCharInfo.js)
