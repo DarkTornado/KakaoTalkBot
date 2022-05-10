@@ -96,3 +96,92 @@ function onNotificationRemoved(sbn, rankingMap, reason) {
  */
 }
 ```
+
+## function onCreate(Bundle savedInstanceState Activity activity)
+- 스크립트 액티비티의 `onCreate` 메서드가 호출되면 호출되는 리스너
+
+```javascript
+function onCreate(savedInstanceState, activity) {
+/*
+ * savedInstanceState - Activity에 있는 onCreate의 매개변수로 넘어오는 Bundle 인스턴스
+ * activity - 해당 스크립트 액티비티의 this
+ */
+}
+```
+
+## function onDestroy(Activity activity)
+- 스크립트 액티비티의 `onDestroy` 메서드가 호출되면 호출되는 리스너
+
+```javascript
+function onDestroy(activity) {
+/*
+ * activity - 해당 스크립트 액티비티의 this
+ */
+}
+```
+
+## function onPause(Activity activity)
+- 스크립트 액티비티의 `onPause` 메서드가 호출되면 호출되는 리스너
+
+```javascript
+function onPause(activity) {
+/*
+ * activity - 해당 스크립트 액티비티의 this
+ */
+}
+```
+
+## function onResume(Activity activity)
+- 스크립트 액티비티의 `onResume` 메서드가 호출되면 호출되는 리스너
+
+```javascript
+function onResume(activity) {
+/*
+ * activity - 해당 스크립트 액티비티의 this
+ */
+}
+```
+
+## function onStart(Activity activity)
+- 스크립트 액티비티의 `onStart` 메서드가 호출되면 호출되는 리스너
+
+```javascript
+function onStart(activity) {
+/*
+ * activity - 해당 스크립트 액티비티의 this
+ */
+}
+```
+
+## function onStop(Activity activity)
+- 스크립트 액티비티의 `onStop` 메서드가 호출되면 호출되는 리스너
+
+```javascript
+function onStop(activity) {
+/*
+ * activity - 해당 스크립트 액티비티의 this
+ */
+}
+```
+
+## function onRestart(Activity activity)
+- 스크립트 액티비티의 `onRestart` 메서드가 호출되면 호출되는 리스너
+
+```javascript
+function onRestart(activity) {
+/*
+ * activity - 해당 스크립트 액티비티의 this
+ */
+}
+```
+
+## function onBackPressed(Activity activity)
+- 스크립트 액티비티의 `onBackPressed` 메서드가 호출되면 호출되는 리스너
+
+```javascript
+function onBackPressed(activity) {
+/*
+ * activity - 해당 스크립트 액티비티의 this
+ */
+}
+```
