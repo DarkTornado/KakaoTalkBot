@@ -9,6 +9,7 @@ parent: API 2
 
 ## String MESSAGE = "message"
 * 채팅이 수신되면 발생하는 이벤트에요.
+
 ```javascript
 function(chat) {
 /*
@@ -43,6 +44,16 @@ function(chat) {
 
 ## String COMMAND = "command"
 * `Bot#setCommandPrefix(String prefix);`으로 설정한 문자열로 시작하는 채팅이 수신되면 발생하는 이벤트에요.
+
+```javascript
+function(chat) {
+/*
+ * chat - 수신된 채팅의 정보가 담겨있는 객체. Event.MESSAGE의 매개변수에 다음 필드 두 개가 추가됨
+ * chat.command - 수신된 채팅 내용을 띄어쓰기로 나눈 결과물 중 가장 앞에 있는 값에서 prefix를 제외한 부분
+ * chat.args - 수신된 채팅 내용을 띄어쓰기로 나눈 결과물 중 가장 앞에 있는 어절을 제외한 배열
+ */
+}
+```
 
 ## String START_COMPILE = "startCompile"
 * 봇 컴파일이 시작되면 발생하는 이벤트에요.
