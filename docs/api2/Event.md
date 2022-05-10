@@ -57,13 +57,28 @@ function(chat) {
 
 ## String START_COMPILE = "startCompile"
 * 봇 컴파일이 시작되면 발생하는 이벤트에요.
+* 매개변수는 없어요
+
+## String TICK = "tick"
+* 매 틱(1초)마다 발생하는 이벤트에요.
+* 매개변수는 없어요
 
 ## String MEMBER_COUNT_CHANGED = "memberChanged"
 * 오픈채팅방 입퇴장 API 사용시 방 인원수가 변하면 발생하는 이벤트에요.
 * **언제든지 불시에 사라질 수도 있어요.**
 
-## String TICK = "tick"
-* 매 틱(1초)마다 발생하는 이벤트
+```javascript
+function(data) {
+/*
+ * data - 인원수 변동이 감지된 방의 정보가 담겨요.
+ * data.room -  인원수 변동이 감지된 방의 이름
+ * 
+ * chat.count - 인원수 변동이 감지된 방의 인원수 정보
+ * chat.count.before - 인원수 변동이 감지되기 직전의 인원수
+ * chat.count.after - 인원수 변동이 감지된 직후의 인원수
+ */
+}
+```
 
 # Event.Activity
 * 스크립트 액티비티와 관련된 `Event`들의 상수값들인거에요.
