@@ -83,3 +83,16 @@ function onNotificationPosted(sbn, sm) {
  */
 }
 ```
+## function onNotificationRemoved(StatusBarNotification sbn, NotificationListenerService.RankingMap rankingMap, int reason)
+* 알림을 읽도록 설정한 앱에서 알림이 띄운 알림이 사라지면 호출되는 리스너
+* 안드로이드 8 미만에서는 매개변수 `rankingMap`와 `reason`는 넘어오지 않음.
+
+```javascript
+function onNotificationRemoved(sbn, rankingMap, reason) {
+/*
+ * sbn - NofiticationListenerService에 있는 onNotificationRemoved의 매개변수로 넘어오는 StatusBarNotification 인스턴스
+ * sbn - NofiticationListenerService에 있는 onNotificationRemoved의 매개변수로 넘어오는 NotificationListenerService.RankingMap 인스턴스
+ * sbn - NofiticationListenerService에 있는 onNotificationRemoved의 매개변수로 넘어오는 reason
+ */
+}
+```
