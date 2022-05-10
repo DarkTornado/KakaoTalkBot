@@ -63,6 +63,34 @@ function(chat) {
 * 매 틱(1초)마다 발생하는 이벤트에요.
 * 매개변수는 없어요
 
+## String NOTIFICATION_POSTED = "notificationPosted"
+* 상단바에 알림이 뜨면 발생하는 이벤트에요.
+
+```javascript
+function(sbn, sm) {
+/*
+ * sbn - NofiticationListenerService에 있는 onNotificationPosted 메서드의 의 매개변수로 넘어오는 StatusBarNotification 인스턴스
+ * sm - 동적으로 세션을 등록할 수 있게 해주는 객체 (SessionManager)
+   - .bindSession(String packageName, String room, Notification.Action action);
+   - .bindSession(String room, Notification.Action action);
+ */
+}
+```
+
+## String NOTIFICATION_REMOVED = "notificationRemoved"
+* 상단바에 뜬 알림이 사라지면 발생하는 이벤트에요.
+* 안드로이드 8 미만에서는 매개변수 `rankingMap`와 `reason`는 넘어오지 않아요.
+
+```javascript
+function(sbn, rankingMap, reason) {
+/*
+ * sbn - NofiticationListenerService에 있는 onNotificationRemoved의 매개변수로 넘어오는 StatusBarNotification 인스턴스
+ * rankingMap - NofiticationListenerService에 있는 onNotificationRemoved의 매개변수로 넘어오는 NotificationListenerService.RankingMap 인스턴스
+ * reason - NofiticationListenerService에 있는 onNotificationRemoved의 매개변수로 넘어오는 reason
+ */
+}
+```
+
 ## String MEMBER_COUNT_CHANGED = "memberChanged"
 * 오픈채팅방 입퇴장 API 사용시 방 인원수가 변하면 발생하는 이벤트에요.
 * **언제든지 불시에 사라질 수도 있어요.**

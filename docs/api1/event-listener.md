@@ -91,8 +91,8 @@ function onNotificationPosted(sbn, sm) {
 function onNotificationRemoved(sbn, rankingMap, reason) {
 /*
  * sbn - NofiticationListenerService에 있는 onNotificationRemoved의 매개변수로 넘어오는 StatusBarNotification 인스턴스
- * sbn - NofiticationListenerService에 있는 onNotificationRemoved의 매개변수로 넘어오는 NotificationListenerService.RankingMap 인스턴스
- * sbn - NofiticationListenerService에 있는 onNotificationRemoved의 매개변수로 넘어오는 reason
+ * rankingMap - NofiticationListenerService에 있는 onNotificationRemoved의 매개변수로 넘어오는 NotificationListenerService.RankingMap 인스턴스
+ * reason - NofiticationListenerService에 있는 onNotificationRemoved의 매개변수로 넘어오는 reason
  */
 }
 ```
