@@ -37,3 +37,15 @@ parent: API 2
 
 ## String base64Decode(String value);
 * `value`를 `Base64` 복호화한 값을 반환헤요.
+
+## String sha(String value);
+* `value`의 `SHA-1` 헤시 값 반환
+
+## String sha256(String value);
+* `value`의 `SHA-256` 헤시 값 반환
+
+## String sha384(String value);
+* `value`의 `SHA-384` 헤시 값 반환
+
+## String sha512(String value);
+* `value`의 `SHA-512` 헤시 값 반환
