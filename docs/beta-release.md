@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 베타 버전 다운로드
-nav_order: 12
+nav_order: 11
 ---
 
 # 베타 버전 다운로드

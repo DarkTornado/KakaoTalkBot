@@ -1,7 +1,8 @@
 ---
 layout: default
 title: 그린스크립트
-nav_order: 7
+parent: 단순 자동응답
+nav_order: 11
 ---
 
 # 그린스크립트

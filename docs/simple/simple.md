@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 단순 자동응답
-nav_order: 6
+nav_order: 7
 has_children: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: SQL 관련
-parent: API 2
+title: SQL API
+nav_order: 5
 ---
 
 # SQLManager
