@@ -26,19 +26,19 @@ parent: API 2
 * 동기로 요청을 넣은 결과는 이 함수의 반환값으로 넘어와요.
 
 
-## callback 인자 정보
+## callback 매개변수 정보
 
 ```javascript
 function (e, res, doc) {
 /*
  * e - 정상적으로 요청되지 않은 경우에만 값이 넘어오며, 요청을 넣는 과정에서 발생한 java.lang.Exception
  * res - 정상적으로 요청된 경우에만 값이 넘어오며, 요청을 넣은 결과 org.jsoup.Connection.Response
- * doc - res에 .parse(); 메서드를 호출한 org.jsoup.nodes.Document
+ * doc - 정상적으로 요청된 경우에만 값이 넘어오며, res에 .parse(); 메서드를 호출한 org.jsoup.nodes.Document
  */
 }
 ```
 
-## option 구조
+## option 인자 구조
 
 ```javascript
 {
