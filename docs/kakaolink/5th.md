@@ -72,4 +72,5 @@ Kakao.send(room, {
 });
 ```
 
-* 아무튼 해당 카카오링크를 보낸 소스는 [이곳을 눌러서 확인 가능](https://github.com/DarkTornado/KakaoTalkBot-Examples/blob/master/MapleStoryCharInfo.js)
+
+* 아무튼 위에 보여준 예시 속 카카오링크를 보낸 소스는 [이곳을 눌러서 확인 가능](https://github.com/DarkTornado/KakaoTalkBot-Examples/blob/master/MapleStoryCharInfo.js)
