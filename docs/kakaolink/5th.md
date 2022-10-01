@@ -74,3 +74,70 @@ Kakao.send(room, {
 
 
 * 아무튼 위에 보여준 예시 속 카카오링크를 보낸 소스는 [이곳을 눌러서 확인 가능](https://github.com/DarkTornado/KakaoTalkBot-Examples/blob/master/MapleStoryCharInfo.js)
+
+
+
+## LIST 템플릿
+
+* `LIST` 템플릿은 이렇게 생겼어요.
+
+![]({{ site.imageurl }}kakaolink/10.png)
+
+
+* 지금은 사라진 어느 강좌글에 따르면 다음과 같이 쓰면 된다고 했어요.
+
+```javascript
+Kakao.send('방 이름', {
+    'link_ver': '4.0',
+    'template_object': {
+        'object_type': 'list',
+        'header_title': '이곳에 제목을 입력하세요.',
+        'header_link': {
+            'web_url': '이곳에 웹 링크를 입력하세요',
+            'mobile_web_url': '이곳에 모바일 웹 링크를 입력하세요'
+        },
+
+        'contents': [{
+            'title': '이곳에 제목을 입력하세요',
+            'description': "이곳에 설명을 입력하세요.",
+            'image_url': '이곳에 이미지 링크를 입력하세요',
+            'link': {
+                'mobile_web_url': '이곳에 모바일 웹 링크를 입력하세요',
+                'web_url': '이곳에 웹 링크를 입력하세요'
+            }
+        }, {
+            'title': '이곳에 제목을 입력하세요',
+            'description': "이곳에 설명을 입력하세요.",
+            'image_url': '이곳에 이미지 링크를 입력하세요',
+            'link': {
+                'mobile_web_url': '이곳에 모바일 웹 링크를 입력하세요',
+                'web_url': '이곳에 웹 링크를 입력하세요'
+            }
+        }, {
+            'title': '이곳에 제목을 입력하세요',
+            'description': "이곳에 설명을 입력하세요.",
+            'image_url': '이곳에 이미지 링크를 입력하세요',
+            'link': {
+                'mobile_web_url': '이곳에 모바일 웹 링크를 입력하세요',
+                'web_url': '이곳에 웹 링크를 입력하세요'
+            }
+
+        }],
+        'buttons': [{
+            'title': '이곳에 제목을 입력하세요',
+            'link': {
+                'mobile_web_url': '이곳에 모바일 웹 링크를 입력하세요',
+                'web_url': '이곳에 웹 링크를 입력하세요'
+            }
+        }]
+
+    }
+});
+```
+
+
+* `contents` 객체 배열 안에 있는 요소의 개수에 따라 칸 수가 바뀌어요. 얼마나 늘릴 수 있는지는 ~~귀찮아서~~ 아직 확인해본 적은 없어요.
+
+## 기타
+
+* 사실 템플릿이 두 가지 더 있긴 한데, 생략할거에요.
