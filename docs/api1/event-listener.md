@@ -84,6 +84,7 @@ function onNotificationPosted(sbn, sm) {
 }
 ```
 ## function onNotificationRemoved(StatusBarNotification sbn, NotificationListenerService.RankingMap rankingMap, int reason)
+* <span style="color:red">경고 : 현재 출시되어 있는 버전에는 아직 구현되어 있지 않습니다.</span>
 * 알림을 읽도록 설정한 앱에서 알림이 띄운 알림이 사라지면 호출되는 리스너
 * 안드로이드 8 미만에서는 매개변수 `rankingMap`와 `reason`는 넘어오지 않음.
 

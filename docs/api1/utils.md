@@ -57,7 +57,11 @@ parent: Legacy API
 ## void vibrate(double sec);
 * `sec`초 동안 진동
 
+## String getJosa(word, josa);
+* <span style="color:red">경고 : 현재 출시되어 있는 버전에는 아직 구현되어 있지 않습니다.</span>
+* `word` 마지막 음절의 받침 여부에 따라 적절한 조사를 반환해요.
+
 
 ## String translate(String lang1, String lang2, String value);
-* 더 이상 작동하지 않는 번역 함수에요.
+* * <span style="color:red">더 이상 작동하지 않는 번역 함수에요.</span>
 * `Api.papagoTranslate();` 함수를 사용해주세요.
