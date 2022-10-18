@@ -83,6 +83,7 @@ function onNotificationPosted(sbn, sm) {
  */
 }
 ```
+
 ## function onNotificationRemoved(StatusBarNotification sbn, NotificationListenerService.RankingMap rankingMap, int reason)
 * <span style="color:red">경고 : 현재 출시되어 있는 버전에는 아직 구현되어 있지 않습니다.</span>
 * 알림을 읽도록 설정한 앱에서 알림이 띄운 알림이 사라지면 호출되는 리스너
@@ -94,6 +95,20 @@ function onNotificationRemoved(sbn, rankingMap, reason) {
  * sbn - NofiticationListenerService에 있는 onNotificationRemoved의 매개변수로 넘어오는 StatusBarNotification 인스턴스
  * rankingMap - NofiticationListenerService에 있는 onNotificationRemoved의 매개변수로 넘어오는 NotificationListenerService.RankingMap 인스턴스
  * reason - NofiticationListenerService에 있는 onNotificationRemoved의 매개변수로 넘어오는 reason
+ */
+}
+```
+
+## function onBatteryLevelChanged(int before, int after, boolean isCharging)
+* <span style="color:red">경고 : 현재 출시되어 있는 버전에는 아직 구현되어 있지 않습니다.</span>
+* 10초 간격으로 배터리 잔량을 확인하다가, 배터리 잔량 변화가 감지되면 호출되는 이벤트 리스너
+
+```javascript
+function onBatteryLevelChanged(before, after, isCharging) {
+/*
+ * before - 배터리 잔량이 변하기 전 잔량 (%)
+ * after - 배터리 잔량이 변한 후 현재 잔량 (%)
+ * isCharging - 배터리가 충전중이라면 true, 아니라면 false. 상황에 따라 배터리가 충전 중이여도 배터리 잔량이 감소할 수도 있음
  */
 }
 ```
