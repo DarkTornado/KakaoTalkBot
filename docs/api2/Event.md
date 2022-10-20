@@ -92,6 +92,23 @@ function(sbn, rankingMap, reason) {
 }
 ```
 
+## String BATTERY_LEVEL_CHANGED = "batteryLevelChanged"
+* <span style="color:red">경고 : 현재 출시되어 있는 버전에는 아직 구현되어 있지 않습니다.</span>
+* 배터리 잔량이 바뀐게 감지되면 발생하는 이벤트에요
+* 배터리 잔량 확인 주기는 10초에요.
+
+```javascript
+function(batteryStatus) {
+/*
+ * batteryStatus - 배터리 정보가 담긴 객체
+ * batteryStatus.level.before - 배터리 잔량 변동이 감지되기 전 잔량
+ * batteryStatus.level.after - 배터리 잔량 변동이 감지된 후 현재 잔량
+ * batteryStatus.status - 배터리 상태 (1 ~ 5)
+ */
+}
+```
+
+
 ## String MEMBER_COUNT_CHANGED = "memberChanged"
 * 오픈채팅방 입퇴장 API 사용시 방 인원수가 변하면 발생하는 이벤트에요.
 * **언제든지 불시에 사라질 수도 있어요.**
