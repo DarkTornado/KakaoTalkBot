@@ -38,7 +38,7 @@ parent: Legacy API
 * 봇을 구동하고 있는 기기의 배터리의 전압을 반환해요.
 
 ## android.os.Build getBuild();
-* android.os.Build();의 값 반환해요.
+* android.os.Build();의 값을 반환해요.
 
 ## String getModelName();
 * 봇을 구동하고 있는 기기의 모델명을 반환해요.
