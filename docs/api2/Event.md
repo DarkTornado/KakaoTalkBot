@@ -78,7 +78,7 @@ function(sbn, sm) {
 ```
 
 ## String NOTIFICATION_REMOVED = "notificationRemoved"
-* <span style="color:red">경고 : 현재 출시되어 있는 버전에는 아직 구현되어 있지 않습니다.</span>
+* {{ site.misc.alert_not_added }}
 * 상단바에 뜬 알림이 사라지면 발생하는 이벤트에요.
 * 안드로이드 8 미만에서는 매개변수 `rankingMap`와 `reason`는 넘어오지 않아요.
 
@@ -93,7 +93,7 @@ function(sbn, rankingMap, reason) {
 ```
 
 ## String BATTERY_LEVEL_CHANGED = "batteryLevelChanged"
-* <span style="color:red">경고 : 현재 출시되어 있는 버전에는 아직 구현되어 있지 않습니다.</span>
+* {{ site.misc.alert_not_added }}
 * 배터리 잔량이 바뀐게 감지되면 발생하는 이벤트에요
 * 배터리 잔량 확인 주기는 10초에요.
 
