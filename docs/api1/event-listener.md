@@ -11,6 +11,7 @@ nav_order: 1
 
 ## function response(String room, String msg, String sender, boolean isGroupChat, Replier replier, ImageDB imageDB, String packageName)
 * 채팅이 수신되면 호출되는 이벤트 리스너
+* {{ site.misc.msgbot }}
 
 ```javascript
 function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName, isMultiChat) {
@@ -43,6 +44,7 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName,
 
 ## function onStartCompile()
 * 스크립트가 리로드되기 직전에 호출되는 이벤트 리스너
+* {{ site.misc.msgbot }}
 
 ```javascript
 function onStartCompile() {
@@ -72,6 +74,7 @@ function secondTick() {
 
 ## function onNotificationPosted(StatusBarNotification sbn, SessionManager sm)
 * 알림을 읽도록 설정한 앱에서 알림이 뜨면 호출되는 리스너
+* {{ site.misc.msgbot }}
 
 ```javascript
 function onNotificationPosted(sbn, sm) {
@@ -115,6 +118,7 @@ function onBatteryLevelChanged(before, after, isCharging) {
 
 ## function onCreate(Bundle savedInstanceState Activity activity)
 - 스크립트 액티비티의 `onCreate` 메서드가 호출되면 호출되는 리스너
+* {{ site.misc.msgbot }}
 
 ```javascript
 function onCreate(savedInstanceState, activity) {
@@ -127,6 +131,7 @@ function onCreate(savedInstanceState, activity) {
 
 ## function onDestroy(Activity activity)
 - 스크립트 액티비티의 `onDestroy` 메서드가 호출되면 호출되는 리스너
+* {{ site.misc.msgbot }}
 
 ```javascript
 function onDestroy(activity) {
@@ -138,6 +143,7 @@ function onDestroy(activity) {
 
 ## function onPause(Activity activity)
 - 스크립트 액티비티의 `onPause` 메서드가 호출되면 호출되는 리스너
+* {{ site.misc.msgbot }}
 
 ```javascript
 function onPause(activity) {
@@ -149,6 +155,7 @@ function onPause(activity) {
 
 ## function onResume(Activity activity)
 - 스크립트 액티비티의 `onResume` 메서드가 호출되면 호출되는 리스너
+* {{ site.misc.msgbot }}
 
 ```javascript
 function onResume(activity) {
@@ -160,6 +167,7 @@ function onResume(activity) {
 
 ## function onStart(Activity activity)
 - 스크립트 액티비티의 `onStart` 메서드가 호출되면 호출되는 리스너
+* {{ site.misc.msgbot }}
 
 ```javascript
 function onStart(activity) {
@@ -171,6 +179,7 @@ function onStart(activity) {
 
 ## function onStop(Activity activity)
 - 스크립트 액티비티의 `onStop` 메서드가 호출되면 호출되는 리스너
+* {{ site.misc.msgbot }}
 
 ```javascript
 function onStop(activity) {
@@ -182,6 +191,7 @@ function onStop(activity) {
 
 ## function onRestart(Activity activity)
 - 스크립트 액티비티의 `onRestart` 메서드가 호출되면 호출되는 리스너
+* {{ site.misc.msgbot }}
 
 ```javascript
 function onRestart(activity) {
@@ -193,6 +203,7 @@ function onRestart(activity) {
 
 ## function onBackPressed(Activity activity)
 - 스크립트 액티비티의 `onBackPressed` 메서드가 호출되면 호출되는 리스너
+* {{ site.misc.msgbot }}
 
 ```javascript
 function onBackPressed(activity) {

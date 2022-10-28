@@ -9,9 +9,11 @@ parent: Legacy API
 
 ## boolean isAllowed(String botName);
 * 해당 봇의 전역 스코프에 `Bridge`로 접근할 수 있는지 반환해요.
+* {{ site.misc.msgbot }}
 
 ## ScriptableObject getScopeOf(String botName);
 * 해당 봇의 전역 스코프를 가지고와요.
+* {{ site.misc.msgbot }}
 
 
 ## boolean evaluateStringIn(String botName, String src);
