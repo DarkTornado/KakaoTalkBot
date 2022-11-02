@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 카카오톡 버전별 변동사항
-nav_order: 11
+nav_order: 13
 ---
 
 # 카카오톡 버전별 변동사항

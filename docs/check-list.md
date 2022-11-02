@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 봇 작동 체크리스트
-nav_order: 10
+nav_order: 11
 ---
 
 # 봇 구동 체크리스트
