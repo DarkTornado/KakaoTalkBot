@@ -16,7 +16,7 @@ nav_order: 2
 * 해당 파일은 `kaling.js`가 필요로 하는 모듈이에요.
 
 ## 모듈 다운로드
-* [이 부분을 눌러서 해당 레포지토리로 이동](https://github.com/DarkTornado/KakaoLink.js)한 뒤에, `kaling.js` 파일과 `crypto.js` 파일을 다운로드 받아주세요.
+* [이 부분을 눌러서 해당 레포지토리로 이동](https://github.com/DarkTornado/KakaoLink.js)한 뒤에, `release` 폴더 안에 있는 `kaling.js` 파일과 `crypto.js` 파일을 다운로드 받아주세요.
 
 ## 모듈 적용
 
