@@ -28,6 +28,7 @@ exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "pac
 misc:
   alert_not_added: '<span style="color:red">경고 : 현재 출시되어 있는 버전에는 아직 구현되어 있지 않습니다.</span>'
   msgbot: '<span style="color:#448AFF">메신저봇에서도 사용할 수 있어요.</span>'
+  chatbot: '<span style="color:#00C853">채팅 자동응답 봇에서만 사용할 수 있어요.</span>'
 
 
 # Regression tests
