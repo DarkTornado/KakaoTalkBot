@@ -15,6 +15,7 @@ parent: Legacy API
 
 ## String read(String path);
 * 경로가 `path`인 파일에 저장된 내용을 읽어와요.
+* 읽으려는 파일이 없거나, 파일을 읽는 것을 실패하면 `null`을 반환해요.
 * `메신저봇`에서도 사용할 수 있어요.
 * {{ site.misc.msgbot }}
 
