@@ -21,7 +21,7 @@ function(chat) {
  * 
  * chat.author - 채팅을 보낸 사람의 정보가 담긴 객체
  * chat.author.name - 채팅을 보낸 사람의 이름
- * chat.author.hash - 채팅을 보낸 사람의 해시. 채팅방마다 다르며, 상대방이 무슨 짓을 하든 같은 계정이라면 절대로 바뀌지 않음
+ * chat.author.hash - 채팅을 보낸 사람의 해시. 채팅방마다 다르며, 상대방이 무슨 짓을 하든 같은 계정이라면 절대로 바뀌지 않음. 현재 배포 중인 버전에는 아직 구현되어 있지 않아요.
  * chat.author.avatar - 채팅을 보낸 사람의 프로필 사진을 가지고 올 수 있는 객체
  * chat.author.avatar.getBase64() - 채팅을 보낸 사람의 프로필 사진을 Base64로 인코딩된 문자열로 반환
  * chat.author.avatar.getBitmap() - 채팅을 보낸 사람의 프로필 사진을 android.graphics.Bitmap 인스턴스로 반환
