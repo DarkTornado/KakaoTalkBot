@@ -22,6 +22,7 @@ nav_order: 2
 
 ## [SQL API]({{ site.url }}{{ site.baseurl }}/docs/sql-api)
 * 데이터베이스와 관련된 것들을 다룰 수 있는 API로, SQLite로 구현되어 있어요.
+* SQL 인젝션이 발생한다거나 그런건 아몰랑. 사용자 여러분이 알아서 막아보세요.
 
 ## [Lua API]({{ site.url }}{{ site.baseurl }}/docs/lua-api/lua-api)
 * 루아로 봇을 만들 때 지원하는 API 목록이 설명되어 있어요.
