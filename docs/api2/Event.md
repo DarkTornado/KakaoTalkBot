@@ -34,7 +34,7 @@ function(chat) {
  * chat.roomImage.getBase64() - 채팅이 수신된 채팅방의 아이콘를 Base64로 인코딩된 문자열로 반환
  * chat.roomImage.getBitmap() - 채팅이 수신된 채팅방의 아이콘를 android.graphics.Bitmap 인스턴스로 반환
  * 
- * chat.hasMention - 수신된 채팅에 멘션이 포함된 경우 true, 아니면 false
+ * chat.hasMention - 수신된 채팅에 멘션이 포함된 경우 true, 아니면 false. 현재 배포 중인 버전에는 아직 구현되어 있지 않아요.
  * chat.isMention - hasMention과 동일. 구버전 호환용이니 안쓰는거 권장
  * chat.chatLogId - 수신된 채팅의 chatLogId
  * chat.packageName - 채팅이 수신된 앱의 패키지명
