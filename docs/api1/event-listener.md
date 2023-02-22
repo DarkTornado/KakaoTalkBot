@@ -9,7 +9,7 @@ nav_order: 1
 
 * 어떠한 이벤트가 발생하면 호출되는 함수에요.
 
-## function response(String room, String msg, String sender, boolean isGroupChat, Replier replier, ImageDB imageDB, String packageName)
+## function response(String room, String msg, String sender, boolean isGroupChat, Replier replier, ImageDB imageDB, String packageName, boolean isMultiChat)
 * 채팅이 수신되면 호출되는 이벤트 리스너
 * {{ site.misc.msgbot }}
 
@@ -37,7 +37,7 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName,
    - .getImage(); - 사진이 수신된 경우, 해당 사진을 Base64로 인코딩된 문자열로 가지고 옴
    - .getImageBitmap(); - 사진이 수신된 경우, 해당 사진을 android.graphics.Bitmap 인스턴스로 가지고 옴
  * packageName - 채팅이 수신된 앱의 패키지명
- * isMultiChat - 듀얼 메신저 등으로 복제된 앱이라면 true, 아니라면 false. 배포 중인 버전에는 아직 미구현
+ * isMultiChat - 듀얼 메신저 등으로 복제된 앱이라면 true, 아니라면 false.
  */
 }
 ```
@@ -88,7 +88,6 @@ function onNotificationPosted(sbn, sm) {
 ```
 
 ## function onNotificationRemoved(StatusBarNotification sbn, NotificationListenerService.RankingMap rankingMap, int reason)
-* {{ site.misc.alert_not_added }}
 * 알림을 읽도록 설정한 앱에서 알림이 띄운 알림이 사라지면 호출되는 리스너
 * 안드로이드 8 미만에서는 매개변수 `rankingMap`와 `reason`는 넘어오지 않음.
 
@@ -103,7 +102,6 @@ function onNotificationRemoved(sbn, rankingMap, reason) {
 ```
 
 ## function onBatteryLevelChanged(int before, int after, boolean isCharging)
-* {{ site.misc.alert_not_added }}
 * 10초 간격으로 배터리 잔량을 확인하다가, 배터리 잔량 변화가 감지되면 호출되는 이벤트 리스너
 
 ```javascript
