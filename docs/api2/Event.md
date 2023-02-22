@@ -15,9 +15,17 @@ function(chat) {
 /*
  * chat - 수신된 채팅의 정보가 담겨있는 객체
  * chat.content - 수신된 채팅 내용
- * chat.room - 채팅이 수신된 방의 이름
  * chat.reply(msg) - 채팅이 수신된 채팅방으로 응답 전송
  * chat.markAsRead() - 채팅이 수신된 채팅방에 별도의 채팅을 보내지 않고 읽음으로 처리
+ * 
+ * chat.room - 채팅이 수신된 방의 정보가 담겨있는 객체
+ * chat.room.name - 채팅이 수신된 방의 이름
+ * chat.room.chatId - 채팅이 수신된 방의 chat_id. 카톡 로컬 DB 뜯으면 나오는 그 chat_id가 맞아요.
+ * chat.room.isGroupChat - 채팅이 수신된 방이 단체채팅방이라면 `true`, 1:1 채팅방이라면 `false`
+ * chat.room.isOpenChat - 채팅이 수신된 방이 오픈채팅방이라면 `true`, 아니라면 `false`
+ * chat.room.icon - 채팅이 수신된 방의 방 아이콘 정보가 담긴 객체
+ * chat.room.icon.getBase64() - 채팅이 수신된 방의 아이콘를 Base64로 인코딩된 문자열로 반환
+ * chat.room.icon.getBitmap() - 채팅이 수신된 방의 아이콘를 android.graphics.Bitmap 인스턴스로 반환
  * 
  * chat.author - 채팅을 보낸 사람의 정보가 담긴 객체
  * chat.author.name - 채팅을 보낸 사람의 이름
@@ -29,10 +37,6 @@ function(chat) {
  * chat.image - 수신된 채팅이 이미지라면 해당 이미지의 정보가 담긴 객체.
  * chat.image.getBase64() - 수신된 이미지를 Base64로 인코딩된 문자열로 반환
  * chat.image.getBitmap() - 수신된 이미지를 android.graphics.Bitmap 인스턴스로 반환
- * 
- * chat.roomImage - 채팅이 수신된 채팅방의 아이콘 정보가 담긴 객체.
- * chat.roomImage.getBase64() - 채팅이 수신된 채팅방의 아이콘를 Base64로 인코딩된 문자열로 반환
- * chat.roomImage.getBitmap() - 채팅이 수신된 채팅방의 아이콘를 android.graphics.Bitmap 인스턴스로 반환
  * 
  * chat.hasMention - 수신된 채팅에 멘션이 포함된 경우 true, 아니면 false. 현재 배포 중인 버전에는 아직 구현되어 있지 않아요.
  * chat.isMention - hasMention과 동일. 구버전 호환용이니 안쓰는거 권장
