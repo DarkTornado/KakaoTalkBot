@@ -5,7 +5,7 @@ parent: Legacy API
 ---
 
 # Bridge
-* 이 API 증 일부는 `메신저봇`에도 있어요.
+* 이 API 중 일부는 `메신저봇`에도 있어요.
 
 ## boolean isAllowed(String botName);
 * 해당 봇의 전역 스코프에 `Bridge`로 접근할 수 있는지 반환해요.
