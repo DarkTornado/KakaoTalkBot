@@ -6,7 +6,7 @@ parent: Legacy API
 
 # FileStream
 * 구버전 호환을 위해 `File`도 남아는 있으나, `FileStream`을 사용하는 것을 권장해요.
-* 이 API 증 일부는 `메신저봇`에도 있어요.
+* 이 API 중 일부는 `메신저봇`에도 있어요.
 
 ## void append(String path, String value);
 * 경로가 `path`인 파일에 저장되어 있는 내용의 뒤에 `value`를 붙여서 저장해요.

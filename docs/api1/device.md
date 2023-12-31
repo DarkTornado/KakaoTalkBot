@@ -5,7 +5,7 @@ parent: Legacy API
 ---
 
 # Device
-* 이 API 증 일부는 `메신저봇`에도 있어요.
+* 이 API 중 일부는 `메신저봇`에도 있어요.
 
 ## String getAndroidVersion();
 * 봇을 구동하고 있는 기기의 안드로이드 버전을 반환해요.

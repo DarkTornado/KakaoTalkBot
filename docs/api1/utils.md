@@ -5,7 +5,7 @@ parent: Legacy API
 ---
 
 # Utils
-* 이 API 증 일부는 `메신저봇`에도 있어요.
+* 이 API 중 일부는 `메신저봇`에도 있어요.
 
 ## String getWebText(String url, boolean removeTags);
 * `jsoup` 라이브러리를 통해 해당 `url`의 소스를 긁어서 문자열로 반환해요.
