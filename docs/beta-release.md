@@ -14,6 +14,10 @@ nav_order: 12
 
 ![]({{ site.imageurl }}beta-download.png)
 
+## 참고 사항
+* `버전 5.0 beta 6`을 사용했을 때 봇이 아예 작동하지 않는다면, 임시방편으로 `버전 5.0 beta 2`를 사용해보세요.
+* 큰 영향을 주지는 않는 버그는 있지만, 작동은 할거에요.
+
 ### 현재 출시된 베타 버전
 * [버전 5.0 beta 6](https://github.com/DarkTornado/KakaoTalkBot/releases/tag/v5.0_beta_6)
 * [버전 5.0 beta 5](https://github.com/DarkTornado/KakaoTalkBot/releases/tag/v5.0_beta_5)
