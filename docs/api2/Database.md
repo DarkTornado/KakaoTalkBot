@@ -17,6 +17,9 @@ parent: API 2
 ## String readString(String fileName);
 * 해당 파일의 내용(문자열)을 읽어요.
 
+## String remove(String fileName);
+* 해당 파일을 지워요. 지워졌으면 true, 아니면 false를 반환해요.
+
 ## Object writeObject(String fileName, Object object);
 * 해당 파일에 자바스크립트 객체를 JSON 문자열로 변환해서 저장해요.
 
