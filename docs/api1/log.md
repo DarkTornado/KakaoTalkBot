@@ -8,7 +8,6 @@ parent: Legacy API
 * 채팅 자동응답 봇 `5.0 beta 2`부터 메신저봇과 사용법이 동일하게 수정되었어요.
 * {{ site.misc.msgbot }}
 
-
 ## void info(String log, boolean showToast);
 * 로그를 기록해요. `Log.i();`로도 사용할 수 있어요.
 * `showToast`가 `true`라면 로그가 토스트 메시지로도 출력될거에요.
