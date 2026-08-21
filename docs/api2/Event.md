@@ -18,14 +18,7 @@ function(chat) {
  * chat.reply(msg) - 채팅이 수신된 채팅방으로 응답 전송
  * chat.markAsRead() - 채팅이 수신된 채팅방에 별도의 채팅을 보내지 않고 읽음으로 처리
  * 
- * chat.room - 채팅이 수신된 방의 정보가 담겨있는 객체
- * chat.room.name - 채팅이 수신된 방의 이름
- * chat.room.chatId - 채팅이 수신된 방의 chat_id. 카톡 로컬 DB 뜯으면 나오는 그 chat_id가 맞아요.
- * chat.room.isGroupChat - 채팅이 수신된 방이 단체채팅방이라면 `true`, 1:1 채팅방이라면 `false`
- * chat.room.isOpenChat - 채팅이 수신된 방이 오픈채팅방이라면 `true`, 아니라면 `false`
- * chat.room.icon - 채팅이 수신된 방의 방 아이콘 정보가 담긴 객체
- * chat.room.icon.getBase64() - 채팅이 수신된 방의 아이콘를 Base64로 인코딩된 문자열로 반환
- * chat.room.icon.getBitmap() - 채팅이 수신된 방의 아이콘를 android.graphics.Bitmap 인스턴스로 반환
+ * chat.room - 채팅이 수신된 방의 이름
  * 
  * chat.author - 채팅을 보낸 사람의 정보가 담긴 객체
  * chat.author.name - 채팅을 보낸 사람의 이름
